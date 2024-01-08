@@ -562,6 +562,10 @@ html {
   border-width: 0;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -702,3 +706,12 @@ html {
 
 /* layer comes from TailwindCss, the reaosn why i use it 
 is to target the BASE, i add specific styles*/
+
+.hover\:bg-white\/10:hover{
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:text-zinc-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
