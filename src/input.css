@@ -10,3 +10,11 @@ is to target the BASE, i add specific styles*/
 		font-family: "Quicksand", sans-serif;
 	}
 }
+
+/*better not to use components, because they can create
+larger output.css files*/
+@layer components {
+	.menu-item {
+		@apply relative flex h-full items-center p-2 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out;
+	}
+}
