@@ -607,6 +607,10 @@ html {
   top: 100%;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -695,10 +699,6 @@ html {
 
 .to-pink-500{
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
-}
-
-.p-10{
-  padding: 2.5rem;
 }
 
 .p-2{
@@ -791,4 +791,14 @@ IF I use component framework like React, this is nto needed*/
 
 .group:hover .group-hover\:block{
   display: block;
+}
+
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
 }
