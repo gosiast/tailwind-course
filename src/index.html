@@ -6,6 +6,18 @@
 		<link href="/src/output.css" rel="stylesheet" />
 		<script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
 		<script defer src="./assets/fontawesome/js/solid.min.js"></script>
+		<script>
+			window.onload = () => {
+				const mobileMenuIcon = document.getElementById("mobile-menu-button");
+				mobileMenuIcon.addEventListener("click", () => {
+					if (mobileMenuIcon.classList.contains("open")) {
+						mobileMenuIcon.classList.remove("open");
+					} else {
+						mobileMenuIcon.classList.add("open");
+					}
+				});
+			};
+		</script>
 	</head>
 	<body>
 		<main>
@@ -21,7 +33,9 @@
 					</div>
 					<div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
 						<div id="mobile-menu-button" class="group">
-							<div class="bg-zinc-200 rounded-full w-8 h-1 group-"></div>
+							<div
+								class="bg-zinc-200 rounded-full w-8 h-1 group-open:rotate:45"
+							></div>
 							<div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
 							<div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
 						</div>
