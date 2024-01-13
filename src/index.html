@@ -6,6 +6,8 @@
 		<link href="/src/output.css" rel="stylesheet" />
 		<script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
 		<script defer src="./assets/fontawesome/js/solid.min.js"></script>
+		<!--adding dynamically a class to the mobile-menu-button
+		adding Javascript event listener to that particular div-->
 		<script>
 			window.onload = () => {
 				const mobileMenuIcon = document.getElementById("mobile-menu-button");
@@ -33,11 +35,16 @@
 					</div>
 					<div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
 						<div id="mobile-menu-button" class="group">
+							<!--the rotation wasn't working because I put a colon: instead of a dash --->
 							<div
-								class="bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45"
+								class="bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative"
 							></div>
-							<div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
-							<div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
+							<div
+								class="opacity-100 group-open:opacity-0 bg-zinc-200 rounded-full w-8 h-1 mt-1 transition-all"
+							></div>
+							<div
+								class="bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative"
+							></div>
 						</div>
 					</div>
 					<!-- flex-1 means this div will fill the remaining space of this navbar 
