@@ -133,6 +133,16 @@
 						</div>
 					</div>
 				</nav>
+				<!-- in calc there can't be a space, everything needs to be in the same class
+				if the image is dynamic - we cant add it in tailwind
+				we need CURLY BRACES but Tailwind won't generate it
+				we might need to hard code it
+				can be this or a class="bg-[url('./assets/images/hero.jpg')]""
+				-->
+				<div
+					style="background-image: url(./assets/images/hero.jpg)"
+					class="flex flex-col items-center justify-center h-[calc(100vh-200px)] min-h-[400px]"
+				></div>
 			</header>
 		</main>
 	</body>

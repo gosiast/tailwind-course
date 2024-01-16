@@ -648,8 +648,16 @@ html {
   height: 0.25rem;
 }
 
+.h-\[calc\(100vh-200px\)\]{
+  height: calc(100vh - 200px);
+}
+
 .h-full{
   height: 100%;
+}
+
+.min-h-\[400px\]{
+  min-height: 400px;
 }
 
 .w-8{
@@ -688,6 +696,10 @@ html {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -735,6 +747,10 @@ html {
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/assets\/images\/hero\.jpg\'\)\]{
+  background-image: url('./assets/images/hero.jpg');
 }
 
 .bg-gradient-to-r{
@@ -848,12 +864,12 @@ is to target the BASE, i add specific styles*/
 larger output.css files
 IF I use component framework like React, this is nto needed*/
 
-.hover\:bg-white\/5:hover{
-  background-color: rgb(255 255 255 / 0.05);
-}
-
 .hover\:bg-white\/10:hover{
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:bg-white\/5:hover{
+  background-color: rgb(255 255 255 / 0.05);
 }
 
 .hover\:text-zinc-200:hover{
