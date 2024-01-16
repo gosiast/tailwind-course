@@ -767,6 +767,18 @@ html {
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
+}
+
+.bg-center{
+  background-position: center;
+}
+
 .p-2{
   padding: 0.5rem;
 }
