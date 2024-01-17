@@ -632,6 +632,14 @@ html {
   margin-top: 0.75rem;
 }
 
+.mt-\[-70px\]{
+  margin-top: -70px;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .block{
   display: block;
 }
@@ -660,6 +668,22 @@ html {
   height: 100%;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
+.h-3{
+  height: 0.75rem;
+}
+
+.h-4{
+  height: 1rem;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
 .min-h-\[400px\]{
   min-height: 400px;
 }
@@ -670,6 +694,14 @@ html {
 
 .w-full{
   width: 100%;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
+.w-14{
+  width: 3.5rem;
 }
 
 .flex-1{
@@ -722,6 +754,10 @@ html {
   gap: 0.5rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .whitespace-nowrap{
   white-space: nowrap;
 }
@@ -767,6 +803,21 @@ html {
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-pink-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+}
+
+.bg-pink-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
+}
+
+.bg-pink-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/assets\/images\/hero\.jpg\'\)\]{
