@@ -730,20 +730,6 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes wavey{
-  0%, 100%{
-    transform: scaleY(0.5);
-  }
-
-  50%{
-    transform: scaleY(1.5);
-  }
-}
-
-.animate-wavey{
-  animation: wavey 1s linear infinite;
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -996,6 +982,22 @@ html {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animation-delay-200{
+  animation-delay: 200ms;
+}
+
+.animation-delay-300{
+  animation-delay: 300ms;
+}
+
+.animation-delay-\[150ms\]{
+  animation-delay: 150ms;
+}
+
+.animation-delay-\[75ms\]{
+  animation-delay: 75ms;
 }
 
 /* layer comes from TailwindCss, the reaosn why i use it 

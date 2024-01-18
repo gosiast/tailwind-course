@@ -13,10 +13,11 @@ module.exports = {
 					},
 				},
 			},
-			//animation-wavey, we want to extend the class
+			// we will have access to the animation-wavey class,
+			// we want to extend the class
 			//infinite means it will keep working all the time
 			animation: {
-				wavey: "wavey 1s linear infinite",
+				wavey: "wavey 1000ms linear infinite",
 			},
 		},
 	},
