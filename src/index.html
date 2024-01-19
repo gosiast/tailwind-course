@@ -33,13 +33,13 @@
 				//we need to grab the width of the carousel
 				//and we want to scroll by that amount
 				//by tag name because each carousel is a DIV
+				previousButton.addEventListener("click", () => {
+					const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+					carousel.scrollLeft = carousel.scrollLeft - itemWidth;
+				});
 				nextButton.addEventListener("click", () => {
 					const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
 					carousel.scrollLeft = carousel.scrollLeft + itemWidth;
-				});
-				previousButton.addEventListener("click", () => {
-					const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
-					carousel.scrollLeft = carousel.scrollRight + itemWidth;
 				});
 			};
 		</script>
