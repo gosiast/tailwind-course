@@ -730,6 +730,20 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes wavey{
+  0%, 100%{
+    transform: scaleY(0.5);
+  }
+
+  50%{
+    transform: scaleY(1.5);
+  }
+}
+
+.animate-wavey{
+  animation: wavey 1000ms linear infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
