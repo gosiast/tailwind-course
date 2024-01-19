@@ -450,6 +450,36 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+h1{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+h2{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h3{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h4{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h5{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h6{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -615,14 +645,14 @@ html {
   top: 100%;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-5{
@@ -637,16 +667,16 @@ html {
   margin-top: 0.25rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
 
 .mt-\[-70px\]{
   margin-top: -70px;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .block{
@@ -1029,6 +1059,9 @@ html {
 
 /* layer comes from TailwindCss, the reaosn why i use it 
 is to target the BASE, i add specific styles*/
+
+/*it's easier to predifine here how I want to style things
+so it's not a pain to do it manually each time*/
 
 /*better not to use components, because they can create
 larger output.css files
