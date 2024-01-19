@@ -620,6 +620,11 @@ html {
   margin-bottom: auto;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -638,6 +643,10 @@ html {
 
 .mt-\[-70px\]{
   margin-top: -70px;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .block{
@@ -702,6 +711,10 @@ html {
 
 .w-full{
   width: 100%;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .flex-1{
