@@ -37,6 +37,10 @@
 					const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
 					carousel.scrollLeft = carousel.scrollLeft + itemWidth;
 				});
+				previousButton.addEventListener("click", () => {
+					const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+					carousel.scrollLeft = carousel.scrollRight + itemWidth;
+				});
 			};
 		</script>
 	</head>
