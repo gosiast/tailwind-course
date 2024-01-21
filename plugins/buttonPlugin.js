@@ -19,5 +19,18 @@ const buttonPlugin = plugin(function ({
 			borderRadius: theme("borderRadius").lg,
 		},
 	});
+	//looping through for each color in our theme
+	for (let key in theme("colors")) {
+		if (typeof theme("colors")[key] !== "string") {
+			for (let shade in theme("colors")[key]) {
+				addComponents({
+					[`.btn-${key}-${shade}`]: {
+						backgroundColor: theme("colors")[key][shade],
+					},
+				});
+			}
+		}
+	}
 });
+
 module.exports = buttonPlugin;

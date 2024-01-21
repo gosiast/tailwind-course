@@ -594,6 +594,10 @@ h6{
   border-radius: 0.5rem;
 }
 
+.btn-rose-500{
+  background-color: #f43f5e;
+}
+
 .menu-item{
   position: relative;
   display: flex;
