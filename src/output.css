@@ -709,6 +709,10 @@ h6{
   margin-top: -70px;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .block{
   display: block;
 }
@@ -803,6 +807,10 @@ h6{
 
 .grow{
   flex-grow: 1;
+}
+
+.border-collapse{
+  border-collapse: collapse;
 }
 
 .rotate-180{
@@ -917,6 +925,11 @@ h6{
 
 .border-white\/40{
   border-color: rgb(255 255 255 / 0.4);
+}
+
+.border-zinc-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
 }
 
 .bg-pink-100{
@@ -1035,6 +1048,11 @@ h6{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
