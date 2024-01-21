@@ -631,6 +631,10 @@ h6{
   position: sticky;
 }
 
+.-top-8{
+  top: -2rem;
+}
+
 .left-0{
   left: 0px;
 }
@@ -649,10 +653,6 @@ h6{
 
 .top-full{
   top: 100%;
-}
-
-.-top-8{
-  top: -2rem;
 }
 
 .mx-auto{
@@ -677,6 +677,10 @@ h6{
   margin-top: 0.25rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -685,16 +689,12 @@ h6{
   margin-top: 0.75rem;
 }
 
-.mt-\[-70px\]{
-  margin-top: -70px;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
+.mt-\[-70px\]{
+  margin-top: -70px;
 }
 
 .block{
@@ -733,16 +733,16 @@ h6{
   height: 1rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .h-\[calc\(100vh-200px\)\]{
   height: calc(100vh - 200px);
 }
 
 .h-full{
   height: 100%;
-}
-
-.h-80{
-  height: 20rem;
 }
 
 .min-h-\[400px\]{
@@ -971,12 +971,12 @@ h6{
   padding-bottom: 0.5rem;
 }
 
-.pr-4{
-  padding-right: 1rem;
-}
-
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-center{
@@ -1023,6 +1023,11 @@ h6{
 .text-zinc-200{
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.text-zinc-900{
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1206,5 +1211,17 @@ IF I use component framework like React, this is nto needed*/
 
   .md\:min-w-\[40\%\]{
     min-width: 40%;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:bg-zinc-900{
+    --tw-bg-opacity: 1;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-zinc-200{
+    --tw-text-opacity: 1;
+    color: rgb(228 228 231 / var(--tw-text-opacity));
   }
 }
