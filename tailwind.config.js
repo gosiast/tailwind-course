@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	//darkMode - here is needed so that it doesn't matter the settings of the pc, but what the
+	//user chooses, via the button on the website
+	darkMode: "class",
 	content: ["./src/**/*.{html,js}"],
 	theme: {
 		extend: {
