@@ -586,6 +586,14 @@ h6{
   --tw-backdrop-sepia:  ;
 }
 
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
 .menu-item{
   position: relative;
   display: flex;
@@ -1282,6 +1290,10 @@ h6{
 
 .animation-delay-\[75ms\]{
   animation-delay: 75ms;
+}
+
+.caption-bottom{
+  caption-side: bottom;
 }
 
 /* layer comes from TailwindCss, the reaosn why i use it 

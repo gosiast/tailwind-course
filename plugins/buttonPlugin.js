@@ -10,7 +10,7 @@ const buttonPlugin = plugin(function ({
 	addComponents({
 		".btn": {
 			display: "inline-block",
-			curso: "pointer",
+			cursor: "pointer",
 			fontWeight: "bold",
 			//it's easier to to refence values if property key doesn't contain
 			//dots within it
@@ -20,4 +20,4 @@ const buttonPlugin = plugin(function ({
 		},
 	});
 });
-module.export = buttonPlugin;
+module.exports = buttonPlugin;

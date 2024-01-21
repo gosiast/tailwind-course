@@ -11,4 +11,4 @@ const tableCaption = plugin(function ({ addUtilities }) {
 	});
 });
 
-module.export = tableCaption;
+module.exports = tableCaption;
