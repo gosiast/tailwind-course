@@ -1,4 +1,6 @@
 const plugin = require("tailwindcss/plugin");
+//importing package, it checks particular text color and check if it's light or dark
+const lightOrDarkColor = require("@check-light-or-dark/color").default;
 
 //https://tailwindcss.com/docs/theme
 //more info about how can we use theme
@@ -23,14 +25,24 @@ const buttonPlugin = plugin(function ({
 	for (let key in theme("colors")) {
 		if (typeof theme("colors")[key] !== "string") {
 			for (let shade in theme("colors")[key]) {
+				const colorType = lightOrDarkColor(theme("colors")[key][shade]);
 				addComponents({
 					[`.btn-${key}-${shade}`]: {
 						backgroundColor: theme("colors")[key][shade],
+						color: colorType === "dark" ? "white" : "black",
 					},
 				});
 			}
 		}
 	}
+	matchComponents({
+		btn: (value) => {
+			return {
+				backgroundColor: value,
+				color: lightOrDarkColor(value) === "dark" ? "white" : "black",
+			};
+		},
+	});
 });
 
 module.exports = buttonPlugin;
