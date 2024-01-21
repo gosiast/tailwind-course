@@ -327,15 +327,24 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>Single day ticket</td>
+							<td class="border border-zinc-500 py-2 px-3">
+								Single day ticket
+							</td>
 
-							<td>£30</td>
+							<td class="border border-zinc-500 py-2 px-3">£30</td>
 						</tr>
 						<tr>
-							<td>7 day ticket</td>
-							<td>£100</td>
+							<td class="border border-zinc-500 py-2 px-3">7 day ticket</td>
+							<td class="border border-zinc-500 py-2 px-3">£100</td>
 						</tr>
 					</tbody>
+					<!--by default captions and tables displayed at the top
+					this doesn't come with tailwind though
+				so we need to create our own utility function-->
+
+					<caption class="caption-bottom">
+						Once they're gone, they're gone!
+					</caption>
 				</table>
 			</div>
 		</main>
