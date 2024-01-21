@@ -667,6 +667,10 @@ h6{
   left: 50%;
 }
 
+.top-1\/2{
+  top: 50%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -865,6 +869,17 @@ h6{
   animation: wavey 1000ms linear infinite;
 }
 
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1005,6 +1020,11 @@ h6{
 .bg-zinc-800{
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-rose-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/assets\/images\/hero\.jpg\'\)\]{
@@ -1187,6 +1207,10 @@ h6{
 
 .opacity-100{
   opacity: 1;
+}
+
+.opacity-75{
+  opacity: 0.75;
 }
 
 .shadow-md{
