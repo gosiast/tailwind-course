@@ -1,6 +1,8 @@
+/*
+
 const plugin = require("tailwindcss/plugin");
 //importing package, it checks particular text color and check if it's light or dark
-const lightOrDarkColor = require("@check-light-or-dark/color").default;
+const { default: lightOrDarkColor } = require("@check-light-or-dark/color");
 
 //https://tailwindcss.com/docs/theme
 //more info about how can we use theme
@@ -46,3 +48,4 @@ const buttonPlugin = plugin(function ({
 });
 
 module.exports = buttonPlugin;
+*/
